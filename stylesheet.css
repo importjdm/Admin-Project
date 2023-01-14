@@ -17,12 +17,39 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-
+/*top half of header*/
 .top-top-contain {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+/*header top left container*/
+.search-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+
+}
+/*stying search bar*/
+#search-bar {
+    height: 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px;
 }
 
+
+/*search, profile-pic, name top-right*/
+.top-right-container {
+    display: grid;
+    grid-template-columns: 15% 30% auto;
+    align-items: center;
+}
+/*profile pic for header*/
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
 
 
 .sidebar {
@@ -37,7 +64,8 @@ body {
     /*interior grid layout*/
     display: grid;
     grid-template-rows: 8% 39% 53%;
-    
+    min-width: 176px;
+    min-height: 908px;
 }
 /*contains eye and luckyme text*/
 .sidebar-top-contain {
@@ -85,5 +113,8 @@ i {
 }
 
 
-/*finish top-bottom layout then :start
+/*(done)finish top-bottom layout then start
  adding all the logos */
+/*figur out the search bar width then all the top
+  header spacing with evertying.*/
+/*move on to the bottom section of header */
