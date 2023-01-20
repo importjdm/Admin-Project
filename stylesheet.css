@@ -16,21 +16,26 @@ body {
     /*for internal grid*/
     display: grid;
     grid-template-rows: 1fr 1fr;
+    min-width: 1143px;  /*--------------check after done*/
 }
 /*top half of header*/
 .top-top-contain {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 70% 30%;
 }
 /*header top left container*/
 .search-container {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 80%;
     align-items: center;
+    justify-items: end;
+    min-width: 1101px;
+    
 
 }
 /*stying search bar*/
 #search-bar {
+    width: 900px;
     height: 30px;
     border-radius: 10px;
     background-color: aliceblue;
@@ -38,19 +43,80 @@ body {
 }
 
 
-/*search, profile-pic, name top-right*/
+/*bell profile-pic, name top-right*/
 .top-right-container {
     display: grid;
-    grid-template-columns: 15% 30% auto;
+    grid-template-columns: 15% 20% 30%;
+    justify-items: start;
     align-items: center;
-}
-/*profile pic for header*/
-.profile-pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    min-width: 429px;
 }
 
+/*profile pic for header*/
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+/*profile name style for header*/
+.top-right-text {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 17px;
+}
+/*the whole top-bottom container */
+.top-bottom-container {
+    display: grid;
+    grid-template-columns: 9% 55% 30%;
+
+}
+/*"hit there" text */
+.top-bottom-left {
+    font-family: "Noto Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    
+
+}
+/*Morgan Oakley (@morgan) text */
+h1 {
+    font-size: larger;
+    margin-top: 0px;
+}
+/*"hi there" text */
+.hi {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: end;
+         
+}
+/*second profile pic */
+.profile-pic-two {
+    justify-self: end;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+/*stying heading buttons */
+.buttons {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    
+
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
 
 .sidebar {
     /*exterior layout for sidebar */
