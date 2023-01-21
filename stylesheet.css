@@ -151,8 +151,14 @@ p{
 i {
     margin-right: 20px;
 }
-.wrapper {
+#wrapper {
+    background-color: rgb(204, 204, 98);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
+    
 
 }
 .article-container {
@@ -160,22 +166,34 @@ i {
     grid-column: 2;
 /*external grid */
     display: grid;
-    grid-template-columns: 40% 40% 20%;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 75%;
+    grid-template-rows: 1fr;
+    gap: 15px
 }
 
 .all-projects {
-    grid-row: 1 / 4;
-    grid-column: 1 / 4;
+    grid-row: 1;
+    grid-column: 1;
     /*exterior grid*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    /*interior grid */
+    
 
 }
 
-.Announcements {
-    grid-column: 3 / 4;
-    grid-row: 1 / 4;
+.project {
+
+}
+
+.Ann-container {
+    grid-column: 2;
+    grid-row: 1;
+    /*^Exterior grid^^^^*/
+    display: grid;
+    grid-template-rows: 1fr;
+
 }
 /*figure out the article layout */
