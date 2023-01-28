@@ -174,41 +174,70 @@ i {
 .project-header {
     font-weight: 900;
 }
-/*3 x 3 article */
-.project {
-    background-color: white;
-}
+
 
 .super-cool {
     grid-row: 2;
-    grid-column: 2; 
+    grid-column: 2;
+    border-radius: 7px; 
     
 }
 
 .Impossible-App {
     grid-row: 3;
     grid-column: 2;
+    border-radius: 7px;
 }
 
 .Less-cool {
     grid-row: 2;
     grid-column: 3;
+    border-radius: 7px;
 }
 
 .Money-maker {
     grid-row: 4;
     grid-column: 3;
+    border-radius: 7px;
 }
  
 .Ad-blocker {
     grid-row: 4;
     grid-column: 2;
+    border-radius: 7px;
 }
 
 .Easy-peasy {
     grid-row: 3;
     grid-column: 3;
+    border-radius: 7px;
 }
+
+/*3 x 3 article */
+.project {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 30px 2fr 1fr 30px;
+    grid-template-columns: 20px 1fr 20px;
+    box-shadow: -7px 0px rgb(233, 166, 41)
+    
+}
+/*headers of project sections */
+.project-header {
+    grid-row: 2;
+    grid-column: 2;
+}
+/*icons of project section */
+.project-logos {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
 /*right side of article */
 .container2 {
     
@@ -232,7 +261,8 @@ i {
     background-color: white;
     display: grid;
     grid-template-rows: 20px 1fr 7px 1fr 7px 1fr 20px;
-    grid-template-columns: 40px 1fr 40px;    
+    grid-template-columns: 30px 1fr 30px;    
+    border-radius: 7px;
     
 
 }
@@ -263,11 +293,12 @@ i {
 
 /*trending text */
 .title-trending {
+    font-family: "Lato", sans-serif;
     grid-row: 2;
     font-size: x-large;
     font-weight: 900;
     display: flex;
-    align-items: flex-end;
+    align-items: center
 }
 
 /*article-right-bottom */
@@ -276,58 +307,92 @@ i {
     grid-column: 1;  
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 30px 1fr 6fr 30px;
+    grid-template-rows: 20px repeat(4, 1fr) 20px;
+    border-radius: 7px;
+    
 }
 
 
 .dolphin {
-  grid-row: 1;
-  grid-column: 1;
+  grid-row: 2;
+  grid-column: 2;
+  margin-top: auto;
+  margin-bottom: auto; 
+  
     
 }
 .dolphin-img {
-    height: 60px;
+
+    height: 50px;
+    background-color: rgb(130, 8, 211);
+    border-radius: 50%;
+    
+    
+    
 }
 
 .elephant {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .elephant-img {
-    height: 60px;
+    height: 50px;
+    background-color: rgb(15, 68, 216);
+    border-radius: 50%;
+ 
 }
 .dinosaur {
-    grid-row: 3;
-    grid-column: 1;
+    grid-row: 4;
+    grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .dinosaur-img {
-    height: 60px;
+    height: 50px;
+    background-color: rgb(231, 24, 17);
+    border-radius: 50%;
+   
 }
 .spider {
-    grid-row: 4;
-    grid-column: 1;
+    grid-row: 5;
+    grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .spider-img {
-    height: 60px;
+    height: 50px;
+    background-color: rgb(245, 242, 55);
+    border-radius: 50%;
+   
 }
-
+/*Centers trending @ texts */
+.socials {
+    margin-top: auto;
+    margin-bottom: auto;
+    height:fit-content;
+    font-weight: 900;
+}
 
 .tegan {
-    grid-row: 1;
-    grid-column: 2;
+    grid-row: 2;
+    grid-column: 3;
+    
+    
 }
 .morgan {
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 3;
+    grid-column: 3;
 }
 .kendall {
-    grid-row: 3;
-    grid-column: 2;
+    grid-row: 4;
+    grid-column: 3;
 }
 .alex {
-    grid-row: 4;
-    grid-column: 2;
+    grid-row: 5;
+    grid-column: 3;
 }
 /*all paragraph elements */
 p{
@@ -337,5 +402,3 @@ p{
 }
 
 
-/*put the trending text and figure out
- spacing in bottom article section */
