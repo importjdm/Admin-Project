@@ -98,7 +98,7 @@ h1 {
     color: white;
     font-size: medium;
     font-weight: 400;
-    background-color: black;
+    background-color: #1e40af;
     border-radius: 20px;
     height: 40px;
     width: 130px;
@@ -114,7 +114,7 @@ h1 {
     grid-row: 1 / 3;
     grid-column: 1;
     /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-    background-color: rgb(18, 79, 172);
+    background-color: #1e40af;
     color: white;
     font-family: "Lato", sans-serif;
     padding-left: 25px; 
@@ -131,9 +131,9 @@ h1 {
     align-items: center;
 }
 /*LuckyMe text*/
-p{
+.luckyme{
    font-family: "Lato", sans-serif;  
-   font-size: 24px;
+   font-size: x-large;
    font-weight: bold;
    color: black;
 }
@@ -156,7 +156,7 @@ i {
 
 /*gray background */
 #wrapper {
-    background-color: grey;
+    background-color: #eff6ff;
     display: grid;
     grid-template-rows: 1fr;   
 }
@@ -239,7 +239,7 @@ i {
     display: grid;
     grid-template-rows: 30px 2fr 1fr 30px;
     grid-template-columns: 20px 1fr 20px;
-    box-shadow: -7px 0px rgb(233, 166, 41)
+    box-shadow: -7px 0px #1e3a8a;
     
 }
 /*headers of project sections */
